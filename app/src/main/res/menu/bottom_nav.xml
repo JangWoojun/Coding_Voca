@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="홈"
+        android:icon="@drawable/home"
+        android:id="@+id/home"
+        app:showAsAction="withText"
+        />
+    <item android:title="단어장"
+        android:icon="@drawable/word"
+        android:id="@+id/word"
+        app:showAsAction="withText"
+        />
+    <item android:title="학습"
+        android:icon="@drawable/learn"
+        android:id="@+id/learn"
+        app:showAsAction="withText"
+
+        />
+    <item android:title="코스"
+        android:icon="@drawable/course"
+        android:id="@+id/course"
+        app:showAsAction="withText"
+        />
+    <item android:title="계정"
+        android:icon="@drawable/account"
+        android:id="@+id/account"
+        app:showAsAction="withText"
+        />
+</menu>

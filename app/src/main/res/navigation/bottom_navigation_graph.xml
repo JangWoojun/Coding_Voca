@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.developmentwords.developmentwords.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_courseInnerFragment"
+            app:destination="@id/courseInnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/word"
+        android:name="com.developmentwords.developmentwords.word.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" >
+        <action
+            android:id="@+id/action_word_to_learn"
+            app:destination="@id/learn" />
+        <action
+            android:id="@+id/action_word_to_course"
+            app:destination="@id/course" />
+    </fragment>
+    <fragment
+        android:id="@+id/learn"
+        android:name="com.developmentwords.developmentwords.learn.LearnFragment"
+        android:label="fragment_learn"
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_learn_to_course"
+            app:destination="@id/course" />
+    </fragment>
+    <fragment
+        android:id="@+id/course"
+        android:name="com.developmentwords.developmentwords.course.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_course_to_courseInnerFragment"
+            app:destination="@id/courseInnerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/account"
+        android:name="com.developmentwords.developmentwords.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        app:destination="@id/course"
+        android:id="@+id/courseInnerFragment"
+        android:name="com.developmentwords.developmentwords.course.CourseInnerFragment"
+        android:label="fragment_course_inner"
+        tools:layout="@layout/fragment_course_inner" >
+        <action
+            android:id="@+id/action_courseInnerFragment_to_word"
+            app:destination="@id/word" />
+    </fragment>
+</navigation>

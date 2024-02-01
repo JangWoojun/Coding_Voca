@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/pager_item_image"
+        android:layout_width="260dp"
+        android:layout_height="260dp"/>
+
+    <TextView
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:id="@+id/title_text"
+        android:text="코딩을 처음 접한다면?"
+        android:layout_marginTop="55dp"
+        android:textSize="24sp"
+        android:textColor="@color/primary_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/subject_text"
+        android:textSize="18sp"
+        android:text="코딩을 처음 입문했지만 어렵고 생소한\n
+단어들이 너무 많으신가요?"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

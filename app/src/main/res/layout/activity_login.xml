@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:background="@color/point_color"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="24dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Log In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/text_color"
+            android:text="Email"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_input_box"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/email_area"
+                android:layout_marginStart="15dp"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp"
+                android:textColor="@color/primary_text_color"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/text_color"
+            android:text="Password"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_input_box"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/password_area"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:textColor="@color/primary_text_color"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/password_show_hide_button"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/password_show_hide_button_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/hide_icon" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/forgot_password"
+            android:text="비밀번호를 잊으셨나요?"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_gravity="center"
+        android:background="@drawable/create_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/text_color"
+            android:text="계정을 가지고 있지 않으신가요?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/move_sign_in_button"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <TextView
+                android:fontFamily="@font/poppinsregular"
+                android:id="@+id/move_sign_in_text"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/point_color"
+                android:text="Sign up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center"
+        android:src="@drawable/login_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/google_login_button"
+            android:layout_marginEnd="12.5dp"
+            android:src="@drawable/google_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+        <ImageView
+            android:id="@+id/apple_login_button"
+            android:layout_marginStart="12.5dp"
+            android:src="@drawable/apple_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
