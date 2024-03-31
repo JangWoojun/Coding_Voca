@@ -2,8 +2,7 @@
 
 # Coding_Voca 2.0
 > 코딩 보카
-<img width="1440" alt="스크린샷 2023-04-12 오후 11 23 04" src="https://lh3.googleusercontent.com/G1xTV3bcr58rMRU3HPvr16skmufgLt1xHA02NOGHY3IIadmEAP06PZVNKt9Vpkkn43wB">
-
+<img width="1440" alt="스크린샷 2023-04-12 오후 11 23 04" src="https://github.com/JangWoojun/Coding_Voca/assets/102157871/e983df6c-a6fe-4371-9fb6-cef95fcb5d8d">
 
 ## 프로젝트 소개
 
